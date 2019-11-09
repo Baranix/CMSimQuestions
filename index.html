@@ -1,7 +1,6 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-		<link rel="stylesheet" type="text/css" href="dist/style.css">
 		<script
 			src="https://code.jquery.com/jquery-3.1.1.min.js"
 			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -34,13 +33,13 @@
 				<div class="ten column row">
 					<div class="six wide column">
 						Agree
-						<button class="massive circular ui icon button agree"></button>
-						<button class="huge circular ui icon button agree"></button>
-						<button class="big circular ui icon button agree"></button>
-						<button class="large circular ui icon button neutral"></button>
-						<button class="big circular ui icon button disagree"></button>
-						<button class="huge circular ui icon button disagree"></button>
-						<button class="massive circular ui icon button disagree"></button>
+						<button class="massive circular ui icon button agree basic green"></button>
+						<button class="huge circular ui icon button agree basic green"></button>
+						<button class="big circular ui icon button agree basic green"></button>
+						<button class="large circular ui icon button neutral basic"></button>
+						<button class="big circular ui icon button disagree basic brown"></button>
+						<button class="huge circular ui icon button disagree basic brown"></button>
+						<button class="massive circular ui icon button disagree basic brown"></button>
 						Disagree
 					</div>
 					<div class="four wide column">
@@ -50,5 +49,12 @@
 				</div>
 			</div>
 		</div>
+
+		<script>
+			$(".circular.button").click(function(){
+				
+				$(this).addClass("basic");
+			});
+		</script>
 	</body>
 </html>
