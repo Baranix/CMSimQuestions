@@ -8,32 +8,20 @@
 		<script src="semantic/dist/semantic.min.js"></script>
 	</head>
 	<body>
-		<div class="ui left visible vertical inverted sidebar labeled icon menu">
-			<a class="item">
-				<i class="home icon"></i>
-				Home
-			</a>
-			<a class="item">
-				<i class="block layout icon"></i>
-				Topics
-			</a>
-			<a class="item">
-				<i class="smile icon"></i>
-				Friends
-			</a>
-		</div>
-		<div class="pusher">
-			<div class="ui grid form">
-				<div class="sixteen wide column">
-					<div class="ui basic very padded segment">
-						<h1>i-ADAPT</h1>
-					</div>
+		<div class="ui grid form">
+			<div class="sixteen wide column">
+				<div class="ui basic very padded segment">
+					<h1>i-ADAPT</h1>
 				</div>
-				<div class="ten wide column">
+			</div>
+			<div class="ten wide column">
+				<div class="ui basic segment">
 					<p>Please read the statements below and respond with the extent to which each statement is required for your job. Then rate how well you perform the action described in the statement. If the statement is not applicable for your job, select Not Applicable for both sections.</p>
 				</div>
-				<div class="eleven column row">
-					<div class="seven wide column">
+			</div>
+			<div class="eleven column row">
+				<div class="ui basic padded segment">
+					<div class="ten wide column">
 						<div class="inline fields">
 							<div class="field">
 								<div class="ui radio checkbox">
@@ -67,17 +55,18 @@
 							</div>
 						</div>
 					</div>
-					<div class="four wide column">
-						<div class="field">
-							<div class="ui radio checkbox">
-								<input type="radio" name="fruit" tabindex="0" class="hidden">
-								<label>Not Applicable</label>
-							</div>
+				</div>
+				<div class="two wide column">
+					<div class="field">
+						<div class="ui radio checkbox">
+							<input type="radio" name="fruit" tabindex="0" class="hidden">
+							<label>Not Applicable</label>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		
 		<script>
 			$('.ui.radio.checkbox').checkbox();
 		</script>
